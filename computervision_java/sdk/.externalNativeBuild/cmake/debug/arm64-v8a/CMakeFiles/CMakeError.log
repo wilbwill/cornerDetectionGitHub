@@ -1,0 +1,11 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Trey Wilbur/Downloads/opencv-4.5.0-android-sdk/OpenCV-android-sdk/sdk/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/bin/ninja.exe" "cmTC_78f11"
+[1/2] Building C object CMakeFiles/cmTC_78f11.dir/testCCompiler.c.o
+FAILED: CMakeFiles/cmTC_78f11.dir/testCCompiler.c.o 
+C:\Users\TREYWI~1\AppData\Local\Android\Sdk\NDK-BU~1\TOOLCH~1\llvm\prebuilt\WINDOW~1\bin\clang.exe --target=aarch64-none-linux-android --gcc-toolchain="C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64" --sysroot="C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/sysroot"   -isystem C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE -o CMakeFiles/cmTC_78f11.dir/testCCompiler.c.o   -c testCCompiler.c
+clang.exe: error: no such file or directory: 'Wilbur/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android'
+ninja: build stopped: subcommand failed.
+
+

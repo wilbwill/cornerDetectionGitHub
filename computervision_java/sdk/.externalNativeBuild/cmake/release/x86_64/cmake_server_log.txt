@@ -1,0 +1,177 @@
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"supportedProtocolVersions":[{"isExperimental":true,"major":1,"minor":1}],"type":"hello"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "handshake",
+  "cookie": "gradle-cmake-cookie",
+  "protocolVersion": {
+    "isExperimental": true,
+    "major": 1,
+    "minor": 1
+  },
+  "sourceDirectory": "C:/Users/Trey Wilbur/Downloads/opencv-4.5.0-android-sdk/OpenCV-android-sdk/sdk/libcxx_helper",
+  "buildDirectory": "C:/Users/Trey Wilbur/Downloads/opencv-4.5.0-android-sdk/OpenCV-android-sdk/sdk/.externalNativeBuild/cmake/release/x86_64",
+  "generator": "Ninja"
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"gradle-cmake-cookie","inReplyTo":"handshake","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "configure",
+  "cacheArguments": [
+    "",
+    "-DANDROID_ABI\u003dx86_64",
+    "-DANDROID_PLATFORM\u003dandroid-21",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\Trey Wilbur\\Downloads\\opencv-4.5.0-android-sdk\\OpenCV-android-sdk\\sdk\\build\\intermediates\\cmake\\release\\obj\\x86_64",
+    "-DCMAKE_BUILD_TYPE\u003dRelease",
+    "-DANDROID_NDK\u003dC:\\Users\\Trey Wilbur\\AppData\\Local\\Android\\Sdk\\ndk-bundle",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003dx86_64",
+    "-DCMAKE_SYSTEM_VERSION\u003d21",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_ANDROID_NDK\u003dC:\\Users\\Trey Wilbur\\AppData\\Local\\Android\\Sdk\\ndk-bundle",
+    "-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\Trey Wilbur\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
+    "-G Ninja",
+    "-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\Trey Wilbur\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-DANDROID_STL\u003dc++_shared"
+  ]
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working C compiler: C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
+CMAKE SERVER: Check for working C compiler: C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":33,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- broken","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working C compiler: C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- broken
+CMAKE SERVER: Check for working C compiler: C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- broken
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Error at C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake:52 (message):\n  The C compiler\n\n    \"C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe\"\n\n  is not able to compile a simple test program.\n\n  It fails with the following output:\n\n    Change Dir: C:/Users/Trey Wilbur/Downloads/opencv-4.5.0-android-sdk/OpenCV-android-sdk/sdk/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/CMakeTmp\n    \n    Run Build Command:\"C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/bin/ninja.exe\" \"cmTC_003fd\"\n    [1/2] Building C object CMakeFiles/cmTC_003fd.dir/testCCompiler.c.o\r\n    FAILED: CMakeFiles/cmTC_003fd.dir/testCCompiler.c.o \r\n    C:\\Users\\TREYWI~1\\AppData\\Local\\Android\\Sdk\\NDK-BU~1\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\clang.exe --target=x86_64-none-linux-android --gcc-toolchain=\"C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/windows-x86_64\" --sysroot=\"C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/sysroot\"   -isystem C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE -o CMakeFiles/cmTC_003fd.dir/testCCompiler.c.o   -c testCCompiler.c\r\n    clang.exe: error: no such file or directory: 'Wilbur/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android'\r\n    ninja: build stopped: subcommand failed.\r\n    \n\n  \n\n  CMake will not be able to correctly generate this project.\nCall Stack (most recent call first):\n  CMakeLists.txt\n\n","title":"Error","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Error at C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake:52 (message):
+  The C compiler
+
+    "C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: C:/Users/Trey Wilbur/Downloads/opencv-4.5.0-android-sdk/OpenCV-android-sdk/sdk/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/CMakeTmp
+    
+    Run Build Command:"C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/bin/ninja.exe" "cmTC_003fd"
+    [1/2] Building C object CMakeFiles/cmTC_003fd.dir/testCCompiler.c.o
+    FAILED: CMakeFiles/cmTC_003fd.dir/testCCompiler.c.o 
+    C:\Users\TREYWI~1\AppData\Local\Android\Sdk\NDK-BU~1\TOOLCH~1\llvm\prebuilt\WINDOW~1\bin\clang.exe --target=x86_64-none-linux-android --gcc-toolchain="C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/windows-x86_64" --sysroot="C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/sysroot"   -isystem C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE -o CMakeFiles/cmTC_003fd.dir/testCCompiler.c.o   -c testCCompiler.c
+    clang.exe: error: no such file or directory: 'Wilbur/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android'
+    ninja: build stopped: subcommand failed.
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt
+
+
+CMAKE SERVER: CMake Error at C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake:52 (message):
+  The C compiler
+
+    "C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: C:/Users/Trey Wilbur/Downloads/opencv-4.5.0-android-sdk/OpenCV-android-sdk/sdk/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/CMakeTmp
+    
+    Run Build Command:"C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/bin/ninja.exe" "cmTC_003fd"
+    [1/2] Building C object CMakeFiles/cmTC_003fd.dir/testCCompiler.c.o
+    FAILED: CMakeFiles/cmTC_003fd.dir/testCCompiler.c.o 
+    C:\Users\TREYWI~1\AppData\Local\Android\Sdk\NDK-BU~1\TOOLCH~1\llvm\prebuilt\WINDOW~1\bin\clang.exe --target=x86_64-none-linux-android --gcc-toolchain="C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/windows-x86_64" --sysroot="C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/sysroot"   -isystem C:/Users/Trey Wilbur/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security   -fPIE -o CMakeFiles/cmTC_003fd.dir/testCCompiler.c.o   -c testCCompiler.c
+    clang.exe: error: no such file or directory: 'Wilbur/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android'
+    ninja: build stopped: subcommand failed.
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt
+
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Configuring incomplete, errors occurred!\nSee also \"C:/Users/Trey Wilbur/Downloads/opencv-4.5.0-android-sdk/OpenCV-android-sdk/sdk/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/CMakeOutput.log\".\nSee also \"C:/Users/Trey Wilbur/Downloads/opencv-4.5.0-android-sdk/OpenCV-android-sdk/sdk/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/CMakeError.log\".","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Configuring incomplete, errors occurred!
+See also "C:/Users/Trey Wilbur/Downloads/opencv-4.5.0-android-sdk/OpenCV-android-sdk/sdk/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/Trey Wilbur/Downloads/opencv-4.5.0-android-sdk/OpenCV-android-sdk/sdk/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/CMakeError.log".
+CMAKE SERVER: Configuring incomplete, errors occurred!
+See also "C:/Users/Trey Wilbur/Downloads/opencv-4.5.0-android-sdk/OpenCV-android-sdk/sdk/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/Trey Wilbur/Downloads/opencv-4.5.0-android-sdk/OpenCV-android-sdk/sdk/.externalNativeBuild/cmake/release/x86_64/CMakeFiles/CMakeError.log".
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","errorMessage":"Configuration failed.","inReplyTo":"configure","type":"error"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: null
