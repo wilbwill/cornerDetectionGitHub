@@ -46,6 +46,7 @@ public class cornerDetection {
                 double G = rgb[1];
                 double B = rgb[2];
                 int y = (int) ((0.299 * R) + (0.587 * G) + (0.114 * B));
+                if(y < 125) y = 0;
                 retBuffer[i * width + j] = (byte) y;
             }
         }
@@ -58,12 +59,11 @@ public class cornerDetection {
         // This func implements the Harris Corner detection. The corners at intensity > thresh
         // are drawn.
 
-        //Mat Harris_scene = new Mat();
         Mat Harris_object = new Mat();
 
         Mat harris_object_norm = new Mat(), harris_object_scaled = new Mat();
         int blockSize = 9;
-        int apertureSize = 5;
+        int apertureSize = 3;
         double k = 0.1;
         Imgproc.cornerHarris(Object, Harris_object, blockSize,apertureSize,k);
 

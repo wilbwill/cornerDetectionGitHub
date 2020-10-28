@@ -151,8 +151,8 @@ public class ComputerVisionActivity extends AppCompatActivity implements GLSurfa
     surfaceView = findViewById(R.id.surfaceview);
     cvModeSwitch = (Switch) findViewById(R.id.switch_cv_mode);
     cvModeSwitch.setOnCheckedChangeListener(this::onCVModeChanged);
-    focusModeSwitch = (Switch) findViewById(R.id.switch_focus_mode);
-    focusModeSwitch.setOnCheckedChangeListener(this::onFocusModeChanged);
+//    focusModeSwitch = (Switch) findViewById(R.id.switch_focus_mode);
+//    focusModeSwitch.setOnCheckedChangeListener(this::onFocusModeChanged);
 
     cpuImageDisplayRotationHelper = new CpuImageDisplayRotationHelper(/*context=*/ this);
 
@@ -191,6 +191,7 @@ public class ComputerVisionActivity extends AppCompatActivity implements GLSurfa
     if (session == null) {
       Exception exception = null;
       String message = null;
+
       try {
         switch (ArCoreApk.getInstance().requestInstall(this, !installRequested)) {
           case INSTALL_REQUESTED:
@@ -234,7 +235,10 @@ public class ComputerVisionActivity extends AppCompatActivity implements GLSurfa
     obtainCameraConfigs();
 
     cvModeSwitch.setChecked(cpuImageRenderer.getSplitterPosition() < 0.5f);
-    focusModeSwitch.setChecked(config.getFocusMode() != Config.FocusMode.FIXED);
+    //focusModeSwitch.setChecked(config.getFocusMode() != Config.FocusMode.FIXED);
+    //config.setFocusMode(Config.FocusMode.AUTO);
+    config.setFocusMode(Config.FocusMode.AUTO);
+    session.configure(config);
 
     // Note that order matters - see the note in onPause(), the reverse applies here.
     try {
