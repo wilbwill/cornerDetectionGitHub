@@ -1,7 +1,7 @@
 include ':sdk'
 include ':app'
 
-def opencvsdk='C:\\Users\\Trey Wilbur\\Downloads\\opencv-4.5.0-android-sdk\\OpenCV-android-sdk'
+def opencvsdk='C:\\Users\\konic\\Documents\\opencv-4.5.0-android-sdk\\OpenCV-android-sdk'
 //   // You can put declaration above into gradle.properties file instead (including file in HOME directory),
 //   // but without 'def' and apostrophe symbols ('): opencvsdk=<path_to_opencv_android_sdk_rootdir>
 project(':sdk').projectDir = new File(opencvsdk + '/sdk')

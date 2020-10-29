@@ -1,24 +1,17 @@
 package com.google.ar.core.examples.java.computervision;
 
 import android.media.Image;
-import android.util.Log;
 
 import com.quickbirdstudios.yuv2mat.Yuv;
 
 import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
-import org.opencv.core.MatOfByte;
-import org.opencv.core.Scalar;
-import org.opencv.imgcodecs.Imgcodecs;
-import org.opencv.imgproc.Imgproc;
 import org.opencv.core.Point;
+import org.opencv.core.Scalar;
+import org.opencv.imgproc.Imgproc;
 
-
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
 import java.nio.ByteBuffer;
-
 
 public class cornerDetection {
 
@@ -39,7 +32,23 @@ public class cornerDetection {
 
         byte[] retBuffer = new byte[(width * height)];
         // Convert values from rgbMat to Y bytes
+
+
+        // Method 1 variables:
+        int max_row = -1;
+        int min_row = height;
+
+        // Method 2 variables:
+        /*
+        int max_row = -1;
+        int min_row = height;
+        int max_counter = 0;
+        int min_counter = 0;
+         */
+
         for(int i = 0; i < height; ++i) {
+            // Method 2 variable:
+            // int current_sum = 0;
             for(int j = 0; j < width; ++j) {
                 double[] rgb = rgbMat.get(i, j);
                 double R = rgb[0];
@@ -48,7 +57,37 @@ public class cornerDetection {
                 int y = (int) ((0.299 * R) + (0.587 * G) + (0.114 * B));
                 if(y < 125) y = 0;
                 retBuffer[i * width + j] = (byte) y;
+
+                //  METHOD 1: SET VALUES IN SAME ROW TO 255
+                if (y > 200){
+                    if (i > max_row) max_row = i;
+                    if (i < min_row) min_row = i;
+                }
+
+                //  METHOD 2: COUNT VALUES IN SAME ROW
+                /*
+                if (y > 200){
+                   current_sum += 1;
+                }
+                 */
             }
+            // METHOD 2: COUNT VALUES IN SAME ROW
+            /*
+            if (current_sum > max_counter && i > max_row){
+                max_counter = current_sum;
+                max_row = i;
+             }
+             else if (current_sum > min_counter && i < min_row){
+                min_counter = current_sum;
+                min_row = i;
+             }
+             */
+        }
+
+        //          USED FOR BOTH METHOD 1 AND 2
+        for (int j = 0; j < width; j++){
+            retBuffer[max_row * width + j] = (byte)255;
+            retBuffer[min_row * width + j] = (byte)255;
         }
 
         return ByteBuffer.wrap(retBuffer);
